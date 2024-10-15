@@ -44,6 +44,7 @@ if st.button("Save Data to CSV"):
 st.subheader("Datawrapper Chart")
 st.markdown("Note: Replace this with your actual Datawrapper embed code")
 datawrapper_embed_code = """
-<iframe title="Random Data Visualization" aria-label="chart" id="datawrapper-chart-XXXXX" src="https://datawrapper.dwcdn.net/XXXXX/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
+<iframe title="Live updating chart?" aria-label="Bar Chart" id="datawrapper-chart-x63Hk" src="https://datawrapper.dwcdn.net/x63Hk/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="161" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
 """
 st.components.v1.html(datawrapper_embed_code, height=400)
